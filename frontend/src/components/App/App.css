@@ -35,10 +35,10 @@ header.flex-container#header {
   border: 2px solid red;
 }
 
-button.modaleBtnOn {
-  color: green;
-  background-color: greenyellow;
-  width: 200;
-  height: 50px;
-  padding: 10px;
+button.onglet {
+  width: 70px;
+  height: 25px;
+  margin: 5px;
+  background: royalblue;
+  border-radius: 15px;
 }
