@@ -1,18 +1,12 @@
 <template>
-  <div>
-    <button class="modaleBtnOn" @click="toggleModale()">
-      <slot></slot>
-    </button>
-
-    <template class="wholeModale useAllPage" v-if="showModale">
-      <div class="overlay useAllPage" @click="toggleModale()"></div>
-      <div class="modaleContent">
-        <button class="modaleBtnOff" @click="toggleModale()">
-          Close X
-        </button>
-        Hahaha je t'ai eu!
-      </div>
-    </template>
+  <div class="wholeModale useAllPage" v-if="showModale">
+    <div class="overlay useAllPage" @click="toggleModale"></div>
+    <div class="modaleContent whiteBG">
+      <button class="modaleBtnOff" @click="toggleModale">
+        Close X
+      </button>
+      <h2 class="whiteBG">Hahaha je t'ai eu!</h2>
+    </div>
 
   </div>
 </template>

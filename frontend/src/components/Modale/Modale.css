@@ -1,10 +1,3 @@
-button.modaleBtnOn {
-  color: green;
-  background-color: greenyellow;
-  width: 200px;
-  height: 50px;
-}
-
 button.modaleBtnOff {
   position: absolute;
   top: 10px;
@@ -15,12 +8,13 @@ button.modaleBtnOff {
   height: 30px;
 }
 
-template.wholeModale {
+.wholeModale {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0);
 }
 
 .overlay {
@@ -28,10 +22,8 @@ template.wholeModale {
 }
 
 .modaleContent {
-  background: white;
   padding: 50px;
   position: fixed;
-  bottom: 10%;
   border-radius: 10px;
 }
 
@@ -41,4 +33,8 @@ template.wholeModale {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.whiteBG {
+  background: white;
 }

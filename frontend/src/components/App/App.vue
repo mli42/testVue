@@ -10,9 +10,10 @@
       <h1>This is a title</h1>
       <counter></counter>
       <mycanvas></mycanvas>
-      <modale :showModale="showModale" :toggleModale="toggleModale">
+      <button class="modaleBtnOn" @click="toggleModale">
         Clique allez stp là!!!
-      </modale>
+      </button>
+      <modale :showModale="showModale" :toggleModale="toggleModale"></modale>
     </body>
   </div>
 </template>
@@ -27,12 +28,12 @@ export default {
   data() {
     return {
       showModale: false as boolean,
-      toggleModale(): void {
-        this.showModale = !this.showModale;
-      },
     };
   },
   methods: {
+    toggleModale(): void {
+      this.showModale = !this.showModale;
+    },
   },
   components: {
     counter: Counter,
