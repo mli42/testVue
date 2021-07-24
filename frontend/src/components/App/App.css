@@ -6,7 +6,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-html, body {
+html#top-html, body#top-body {
   height: 100%;
 }
 
