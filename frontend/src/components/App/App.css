@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: slategray;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+#myapp {
+  width: 100%;
+  height: 100%;
+  border: 3px dashed black;
+}
+
+header.flex-container#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pong-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.delimiter {
+  border: 2px solid red;
+}
