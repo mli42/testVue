@@ -19,6 +19,7 @@ export default {
   },
   methods: {
     toggleModale(): void {
+      //@ts-ignore
       this.showModale = !this.showModale;
     },
   },

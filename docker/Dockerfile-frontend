@@ -6,7 +6,7 @@ WORKDIR /app_frontend
 RUN npm i vue -g @vue/cli @vue/cli-service
 
 # Axios
-RUN npm i axios
+# RUN npm i axios
 
 EXPOSE 8080
 

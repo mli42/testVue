@@ -11,6 +11,7 @@
       <button class="onglet" @click="dynamicComp = 'counter'">Counter</button>
       <button class="onglet" @click="dynamicComp = 'mycanvas'">Canvas</button>
       <button class="onglet" @click="dynamicComp = 'makeModale'">Modale</button>
+      <button class="onglet" @click="dynamicComp = 'randomCat'">Cat</button>
       <component :is="dynamicComp"></component>
     </body>
   </div>
@@ -20,6 +21,7 @@
 import Counter from '../Counter/Counter.vue'
 import Canvas from '../Canvas/Canvas.vue'
 import makeModale from '../makeModale/makeModale.vue'
+import RandomCat from '../RandomCat/RandomCat.vue'
 
 export default {
   name: 'App',
@@ -34,6 +36,7 @@ export default {
     counter: Counter,
     mycanvas: Canvas,
     makeModale: makeModale,
+    randomCat: RandomCat,
    },
 }
 </script>
