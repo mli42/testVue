@@ -17,8 +17,10 @@ export default {
   },
   methods: {
   },
-  created() {
+  mounted() {
     const _this: any = this;
+
+    axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
     axios.get("https://api.thecatapi.com/v1/images/search")
     .then(resp => { _this.urlImg = resp.data[0].url; })
   }
