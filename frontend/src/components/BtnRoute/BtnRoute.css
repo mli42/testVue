@@ -1,0 +1,12 @@
+div.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a.route {
+  text-decoration: none;
+}
+
+a.router-link-exact-active {
+  color: orange;
+}

@@ -10,10 +10,6 @@ html#top-html, body#top-body {
   height: 100%;
 }
 
-body#subapps {
-  margin-left: 15px;
-}
-
 #myapp {
   width: 100%;
   height: 100%;
@@ -33,12 +29,4 @@ header.flex-container#header {
 
 .delimiter {
   border: 2px solid red;
-}
-
-button.onglet {
-  width: 70px;
-  height: 25px;
-  margin: 5px;
-  background: royalblue;
-  border-radius: 15px;
 }

@@ -12,7 +12,7 @@
 
     <ul>
       <li class="task-elem" v-for="(task, index) in tasks" :key="index">
-        <p style="margin-left: 5px;">{{task}}</p>
+        <p style="margin-left: 5px;">{{printTask(task)}}</p>
         <button class="del-task" @click="tasks.splice(index, 1)">X</button>
       </li>
     </ul>
@@ -29,6 +29,13 @@ export default {
     };
   },
   methods: {
+    printTask(task: string): string {
+      const max_length: number = 10;
+
+      if (task.length <= max_length)
+        return task;
+      return task.substr(0, max_length - 3) + "...";
+    },
     addNewTask() {
       const _this: any = this;
 
