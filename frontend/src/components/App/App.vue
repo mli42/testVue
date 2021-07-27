@@ -8,22 +8,36 @@
     <hr/>
     <br/>
     <router-view></router-view>
+    <footer class="notweather" v-if="toggleFooter">
+      I know you're not in the Weather tab
+    </footer>
   </div>
 </template>
 
 <script lang="ts">
 import BtnRoute from '../BtnRoute/BtnRoute.vue'
+import EventBus from '../../bus'
 
 export default {
   name: 'App',
   data() {
     return {
+      toggleFooter: true as boolean,
     };
   },
   methods: {
+    changeToggleFooter(bool: boolean) {
+      this.toggleFooter = bool;
+    },
   },
   components: {
     btnroute: BtnRoute,
+  },
+  created() {
+    EventBus.$on("changeToggleFooter", this.changeToggleFooter);
+  },
+  destroyed() {
+    EventBus.$off("changeToggleFooter", this.changeToggleFooter);
   },
 }
 </script>
